@@ -1,24 +1,33 @@
 {
-	"name": "facerecognitionapi",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "nodemon server.js"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"bcrypt-nodejs": "0.0.3",
-		"body-parser": "^1.19.0",
-		"clarifai": "^2.9.1",
-		"cors": "^2.8.5",
-		"express": "^4.17.1",
-		"knex": "^0.20.13",
-		"pg": "^8.0.0"
-	},
-	"devDependencies": {
-		"nodemon": "^2.0.2"
-	}
+    "name": "facerecognitionapi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.19.0",
+        "clarifai": "^2.9.1",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "knex": "^0.20.13",
+        "pg": "^8.0.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.19.0",
+        "nodemon": "^2.0.2",
+        "prettier": "^2.0.2"
+    }
 }

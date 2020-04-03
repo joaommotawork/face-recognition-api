@@ -10,13 +10,13 @@ const profile = require('./controllers/profile')
 const image = require('./controllers/image')
 
 const db = knex({
-	client: 'pg',
-	connection: {
-		host: '127.0.0.1',
-		user: 'johnymoty',
-		password: '',
-		database: 'facerecognition'
-	}
+    client: 'pg',
+    connection: {
+        host: '127.0.0.1',
+        user: 'johnymoty',
+        password: '',
+        database: 'facerecognition'
+    }
 })
 
 const app = express()
@@ -38,8 +38,8 @@ app.put('/image', image.handleImage(db))
 
 app.post('/imageURL', image.handleApiCall())
 
-const PORT = process.env.PORT
+const { PORT } = process.env
 
-app.listen( PORT, () => {
+app.listen(PORT, () => {
     console.log(`App Running on Port ${PORT}`)
 })
